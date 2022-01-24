@@ -16,7 +16,7 @@ export function getAllDogs(){
 
     return  (dispatch) => {
 
-        axios.get('/dogs')
+        axios('/dogs')
         .then(res => {
             return dispatch({
                 type: GET_ALL_DOGS,
